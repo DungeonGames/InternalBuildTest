@@ -69,21 +69,22 @@
       </div>
     </div>
   </div>
-  <script src="Build/shooter iternal test.loader.js"></script>
+  <script src="Build/Build.loader.js"></script>
   <script>
     const maxPixelRatioMobile = 2.0;
     const maxPixelRatioDesktop = 1.5;
 
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    var maxDevicePixelRatio = isMobile? maxPixelRatioMobile: maxPixelRatioDesktop;
+    var isIOSDevice = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    var isMobileDevice = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var maxDevicePixelRatio = isMobileDevice? maxPixelRatioMobile: maxPixelRatioDesktop;
     var pixelRatio = Math.min(window.devicePixelRatio, maxDevicePixelRatio);
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/shooter iternal test.loader.js";
+    var loaderUrl = buildUrl + "/Build.loader.js";
     var config = {
-      dataUrl: buildUrl + "/b534369c52dbb44aebd2708b1eac5b94.data.unityweb",
-      frameworkUrl: buildUrl + "/c8d0ce925045c08d95bdfd43d2f6f9ed.js.unityweb",
-      codeUrl: buildUrl + "/9fba727c0566b51f1574ec135fd433b6.wasm.unityweb",
+      dataUrl: buildUrl + "/c9ddea55ba482f088c83b037564ab94c.data.unityweb",
+      frameworkUrl: buildUrl + "/dc652433f57793163def0010760eb0b0.js.unityweb",
+      codeUrl: buildUrl + "/6ea0bbf7b7a21b1184fe0ff4b7931279.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DungeonGames",
       productName: "Shooter",
